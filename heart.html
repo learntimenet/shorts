@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+        body {
+            background: #333;
+            color: #fff;
+            font-family: 'Archivo Black', sans-serif;
+            font-size: 60px;
+            margin-top: 30px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .heart {
+            background-color: red;
+            display: inline-block;
+            position: relative;
+            transform: rotate(-45deg);
+            width: 30px;
+            height: 30px;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: "";
+            position: absolute;
+            background-color: red;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+        }
+
+        .heart::before {
+            top: -15px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: 15px;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    I <span class="heart"></span> you
+</body>
+</html>
